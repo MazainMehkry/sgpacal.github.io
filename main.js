@@ -174,7 +174,7 @@ function calcCGPA() {
         cred_sum += creds[i];
     console.log("creds sum is"+cred_sum);
     console.log(cgpa);
-    sum = 24*(cgpa[0]+cgpa[1])+28*(cgpa[2]+cgpa[3])+26*(cgpa[4]+cgpa[5])+22*cgpa[6]+21*cgpa[7];
+    sum = (cgpa[0]+cgpa[1])+(cgpa[2]+cgpa[3])+(cgpa[4]+cgpa[5])+cgpa[6]+cgpa[7];
     console.log(sum);
     finalCGPA = sum / cred_sum;
     $('.cgparesult').html(finalCGPA.toFixed(2));
